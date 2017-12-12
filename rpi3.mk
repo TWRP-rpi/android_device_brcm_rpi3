@@ -57,8 +57,11 @@ PRODUCT_COPY_FILES += \
     hardware/broadcom/wlan/bcmdhd/config/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 # Ramdisk
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/brcm/rpi3/ramdisk,root)
+PRODUCT_PACKAGES += \
+	$(LOCAL_PATH)/rootdir/etc/fstab.rpi3:root/fstab.rpi3 \
+	$(LOCAL_PATH)/rootdir/etc/init.rpi3.rc:root/init.rpi3.rc \
+	$(LOCAL_PATH)/rootdir/etc/init.usb.rc:root/init.usb3.rc \
+	$(LOCAL_PATH)/rootdir/etc/ueventd.rpi3.rc:root/ueventd.rpi3.rc \
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
