@@ -20,3 +20,7 @@ LOCAL_PATH := device/brcm/rpi3
 # Device board elements
 include $(LOCAL_PATH)/PlatformConfig.mk
 include $(LOCAL_PATH)/board/*.mk
+
+TARGET_PREBUILT_KERNEL := kernel/rpi/arch/arm/boot/zImage
+
+recoveryramdisk: $(call build-recoveryramdisk)
