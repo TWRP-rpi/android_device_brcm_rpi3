@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-	$(LOCAL_PATH)/rootdir/etc/fstab.rpi3:root/fstab.rpi3 \
+	$(LOCAL_PATH)/rootdir/etc/fstab.rpi3:root/recovery.fstab \
 	$(LOCAL_PATH)/rootdir/etc/init.rpi3.rc:root/init.rpi3.rc \
 	$(LOCAL_PATH)/rootdir/etc/init.usb.rc:root/init.usb3.rc \
 	$(LOCAL_PATH)/rootdir/etc/ueventd.rpi3.rc:root/ueventd.rpi3.rc \
