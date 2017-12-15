@@ -41,11 +41,11 @@ PRODUCT_PACKAGES += \
 #    i2cset
 
 # Ramdisk
-PRODUCT_PACKAGES += \
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/etc/fstab.rpi3:root/recovery.fstab \
 	$(LOCAL_PATH)/rootdir/etc/init.rpi3.rc:root/init.rpi3.rc \
 	$(LOCAL_PATH)/rootdir/etc/init.usb.rc:root/init.usb3.rc \
-	$(LOCAL_PATH)/rootdir/etc/ueventd.rpi3.rc:root/ueventd.rpi3.rc \
+	$(LOCAL_PATH)/rootdir/etc/ueventd.rpi3.rc:root/ueventd.rpi3.rc
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
