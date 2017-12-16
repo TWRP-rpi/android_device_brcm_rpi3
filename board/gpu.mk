@@ -1,0 +1,3 @@
+# Video flags
+BOARD_GPU_DRIVERS := vc4
+TARGET_USE_PAN_DISPLAY := true
